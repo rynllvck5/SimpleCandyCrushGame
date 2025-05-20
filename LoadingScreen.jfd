@@ -1,0 +1,82 @@
+JFDML JFormDesigner: "8.2.0.0.331" Java: "21" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"title": "AbuanCandyCrush"
+			"$locationPolicy": 1
+			"$sizePolicy": 1
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblHowToPlay"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Ray Gil\\OneDrive\\Desktop\\AbuanCandyCrush\\Images\\howtoplay.png" )
+				"visible": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "lblHowToPlayMouseEntered", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "lblHowToPlayMouseExited", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lblHowToPlayMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 215
+				"y": 340
+				"width": 410
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblPlay"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Ray Gil\\OneDrive\\Desktop\\AbuanCandyCrush\\Images\\PlayButton.png" )
+				"visible": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "lblPlayMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "lblPlayMouseEntered", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "lblPlayMouseExited", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 295
+				"y": 265
+				"width": 230
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblCar"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Ray Gil\\OneDrive\\Desktop\\AbuanCandyCrush\\Images\\CarLoading.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": -150
+				"y": 175
+				"width": 315
+				"height": 275
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblLoading"
+				"text": "Loading..."
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Rockwell Extra Bold", 0, 48 )
+				"foreground": sfield java.awt.Color orange
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 250
+				"y": 170
+				"width": 345
+				"height": 115
+			} )
+			add( new FormComponent( "javax.swing.JProgressBar" ) {
+				name: "LoadingBar"
+				"background": new java.awt.Color( 255, 50, 255, 63 )
+				"foreground": new java.awt.Color( 106, 51, 106, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 35
+				"y": 445
+				"height": 14
+				"width": 800
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblBackground"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "C:\\Users\\Ray Gil\\OneDrive\\Desktop\\AbuanCandyCrush\\Images\\LoadingScreenBackground.jpg" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"width": 870
+				"height": 470
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 30, 10 )
+			"size": new java.awt.Dimension( 870, 505 )
+		} )
+	}
+}
